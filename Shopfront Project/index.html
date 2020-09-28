@@ -1,0 +1,123 @@
+
+<!doctype html lang="en"> 
+
+<html>
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="site-container">
+  <div class="site-pusher">
+    
+    <header class="header">
+      
+      <a href="#" class="header__icon" id="header__icon"></a>
+      <a href="#" class="header__logo">Alezandra's Bookshop Project</a>
+      
+      <nav class="menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a class="booklink" href="#">Bookcase (0)</a>
+        
+      </nav>
+      <p id="quotation"> 
+     
+      </p> 
+    </header>
+
+    <div class="site-content">
+      <div class="container">
+        
+        <h1>My e-book library</h1>   
+   
+  
+
+ 
+
+  
+
+        <div class="searchBar">
+            <form>
+              <input type="text" placeholder="Enter..." name="search" value="">
+              <input type="submit" value="Find">
+              
+            </form>
+          </div>
+        
+      
+      
+      <section class="list">
+          <div>
+            <h2>
+              Recommended Reading
+            </h2>  
+            <div class="book"><img src="https://cdn.waterstones.com/override/v1/large/9781/4091/9781409180074.jpg" alt="Queenie">
+            <article>
+              <h2 title="Queenie">Queenie</h2>
+                <p class="author">by Candice Carty-Williams</p>
+                <p class="price">£0.99</p>
+                <summary class="description">THE NUMBER TWO SUNDAY TIMES BESTSELLER
+
+                  'Hilarious, compelling, painful, enlightening, honest. I loved it.' - Dolly Alderton
+                  'Brilliant, timely, funny, heartbreaking' - Jojo Moyes
+                  'A vital, often very funny novel' - The Sunday Times</summary>
+              </article> 
+            </div>
+            <div class="book"><img src="https://images-na.ssl-images-amazon.com/images/I/81H+63TZuFL.jpg" alt="Things Fall Apart">
+              <article>
+                <h2 title="Things Fall Apart">Things Fall Apart</h2>
+                  <p class="author">by Chinua Achebe</p>
+                  <p class="price">£1.99</p>
+                  <summary class="description">Things Fall Apart is the debut novel by Nigerian author Chinua Achebe, first published in 1958. Its story chronicles pre-colonial life in the southeastern part of Nigeria and the arrival of Europeans during the late 19th century.</summary>
+                </article> 
+              </div><div class="book"><img src="https://images-na.ssl-images-amazon.com/images/I/61vhUnL+PfL.jpg" alt="The Wretched of the Earth">
+                <article>
+                  <h2 title="The Wretched of the Earth">The Wretched of the Earth</h2>
+                    <p class="author">by Frantz Fanon</p>
+                    <p class="price">£0.99</p>
+                    <summary class="description">The Wretched of the Earth (French: Les Damnés de la Terre) is a 1961 book by the psychiatrist Frantz Fanon, in which the author provides a psychiatric and psychologic analysis of the dehumanizing effects of colonization upon the individual and the nation, and discusses the broader social, cultural, and political implications inherent to establishing a social movement for the decolonization of a person and of a people.</summary>
+                  </article> 
+                </div><div class="book"><img src="https://images-na.ssl-images-amazon.com/images/I/61S483M4YBL.jpg" alt="Handa's Surprise">
+                  <article>
+                    <h2 title="Handa's Surprise">Handa's Surprise</h2>
+                      <p class="author">by Eileen Browne</p>
+                      <p class="price">£5.99</p>
+                      <summary class="description">In this picture book classic, a delightful surprise colourfully unfolds when a little girl called Handa puts seven delicious fruits in a basket to take to her friend.</summary>
+                    </article> 
+                  </div>
+          </div>
+      </section>
+        
+      </div> <!-- END container -->
+    </div> <!-- END site-content -->
+    <div class="site-cache" id="site-cache"></div>
+  </div> <!-- END site-pusher -->
+</div> <!-- END site-container -->
+
+<script>
+
+  var myArray = [
+    "“A reader lives a thousand lives before he dies . . . The man who never reads lives only one.” – George R.R. Martin",
+    "“You can never get a cup of tea large enough or a book long enough to suit me.” – C.S. Lewis",
+    "“Reading is essential for those who seek to rise above the ordinary.” – Jim Rohn",
+    "“Today a reader, tomorrow a leader.” – Margaret Fuller",
+    "“Once you learn to read, you will be forever free.” – Frederick Douglass",
+    "“A book is a gift you can open again and again.” – Garrison Keillor"
+
+  ];
+
+  window.onload = function() { 
+     var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
+
+  document.getElementById("quotation").innerHTML = randomItem;
+
+  };
+</script>
+</body>
+
+</html>
